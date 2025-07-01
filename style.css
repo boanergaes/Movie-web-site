@@ -49,6 +49,7 @@ body {
     border-radius: 100%;
     height: 60px;
     flex: 0;
+    box-shadow: none;
 }
 
 .header .boa {
@@ -89,6 +90,7 @@ body {
     display: inline-block;
     width: auto;
     height: auto;
+    box-shadow: none;
 }
 
 .search-bar .search-icon {
@@ -107,6 +109,8 @@ input {
     color: #eaebf1;
     flex-shrink: 1;
     min-width: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .23),
+                inset 5px 5px px rgba(0, 0, 0, .1);
 }
 
 .header ul {
@@ -199,6 +203,7 @@ button {
     color: white;
     padding: 8px 24px;
     cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .text-part button {
@@ -231,6 +236,7 @@ img {
     width: 160px;
     height: 250px;
     border-radius: 8px;
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .movie-list {
@@ -249,7 +255,16 @@ img {
     display: flex;
     flex-direction: column;
     width: 160px;
+    height: 370px;
     flex-wrap: wrap;
+    border-radius: 8px;
+    background-color: hsla(220, 13%, 91%, .4);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .14);
+}
+
+.content p {
+    margin: 4px 8px;
+    text-align: center;
 }
 
 .quote-section {
@@ -297,6 +312,8 @@ img {
     align-items: center;
     gap: 20px;
     color: #e5e7eb;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .35);
+
 }
 
 .pop-up .title {
@@ -314,6 +331,7 @@ img {
 
 .pop-up button {
     border: 1px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .23);
 }
 
 .footer {
