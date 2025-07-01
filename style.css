@@ -21,39 +21,27 @@ body {
     height: 60px;
 }
 
-.header .left, .header .letf {
+.header .left {
     display: flex;
     align-items: center;
     gap: 16px;
-}
-
-.header .left {
     margin: 0;
     max-width: 205px;
-    /* box-sizing: content-box; */
-    /* display: inline-block; */
     padding-right: 40px;
 }
 
-.header img {
+.header img {            /*boanergaes logo*/
     border-radius: 100%;
     height: 60px;
     flex: 0;
     box-shadow: none;
 }
 
-.header .boa {
+.header .boa {          /*boanergaes text*/
     font-size: 24px;
     font-weight: 600;
     color: #f9faf8;
     margin: 0;
-    /* display: inline-block; */
-}
-
-.header a {
-    text-decoration: none;
-    color: lightgray;
-
 }
 
 .header .right {
@@ -63,7 +51,13 @@ body {
     gap: 14px;
 }
 
-.header .right .search-bar {
+.header a {
+    text-decoration: none;
+    color: lightgray;
+
+}
+
+.search-bar {
     display: flex;
     align-items: center;
     margin: 0;
@@ -72,7 +66,7 @@ body {
     min-width: 10px;
 }
 
-.search-bar #search-button {
+#search-button {
     border: none;
     background: none;
     padding: 0;
@@ -90,7 +84,7 @@ body {
     flex: 0;
 }
 
-input {
+.right .search-bar input {
     background-color: hsla(220, 13%, 91%, 0.3);
     border: none;
     border-radius: 6px;
@@ -158,9 +152,10 @@ input {
 }
 
 .intro-section img {
-    width: 70%;
+    width: 100%;
     min-width: 370px;
     margin: 15px 0 0 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .text-part {
@@ -173,6 +168,8 @@ input {
 .text-part p {
     padding: 0;
     margin: 0;
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .text-part .hero-text {
@@ -181,14 +178,9 @@ input {
     font-weight: 900;
 }
 
-.text-part p {
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
 button {
     width: 100px;
-    border-radius: 7px;
+    border-radius: 8px;
     background-color: #3882f6;
     color: white;
     padding: 8px 24px;
@@ -198,6 +190,7 @@ button {
 
 .text-part button {
     margin-top: 20px;
+    border: none;
 }
 
 .picture-part {
@@ -207,13 +200,11 @@ button {
 }
 
 .all-time-section {
-    margin: 0;
     padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100%; */
 }
 
 .all-time-section h2 {
@@ -226,7 +217,6 @@ img {
     width: 160px;
     height: 250px;
     border-radius: 8px;
-     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
 .movie-list {
@@ -237,7 +227,6 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 36px;
-    width: 100%;
 }
 
 
@@ -285,7 +274,6 @@ img {
 .bottom-section {
     margin: 0;
     padding: 30px;
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,7 +291,6 @@ img {
     gap: 20px;
     color: #e5e7eb;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .35);
-
 }
 
 .pop-up .title {
@@ -334,5 +321,4 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
