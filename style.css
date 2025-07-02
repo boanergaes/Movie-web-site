@@ -188,6 +188,11 @@ button {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
 }
 
+button:hover {
+    transform: scale(1.1);
+    background-color: hsl(217, 91%, 56%);
+}
+
 .text-part button {
     margin-top: 20px;
     border: none;
@@ -241,9 +246,21 @@ img {
     box-shadow: 2px 5px 10px rgba(0, 0, 0, .14);
 }
 
+.content:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, .4);
+}
+
+.content img {
+    border-radius: 8px 8px 0 0;
+}
+
 .content p {
     margin: 4px 8px;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: hsl(215, 28%, 27%);
 }
 
 .quote-section {
